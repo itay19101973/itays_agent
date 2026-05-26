@@ -1,0 +1,8 @@
+services:
+  agent:
+    build: .
+    stdin_open: true   # keeps stdin open for the chat loop
+    tty: true          # allocates a pseudo-TTY
+    environment:
+      GEMINI_API_KEY:
+      GITHUB_PERSONAL_ACCESS_TOKEN:
