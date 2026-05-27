@@ -46,7 +46,7 @@ MCP_SERVERS: list[McpServerConfig] = [
         name="filesystem",
         params=StdioServerParameters(
             command="npx",
-            args=["-y", "@modelcontextprotocol/server-filesystem", "/workspace"],
+            args=["-y", "@modelcontextprotocol/server-filesystem", "/workspace" , "/app/workspace"],
             env={"PATH": _path()},
         ),
     ),
