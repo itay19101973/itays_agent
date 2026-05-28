@@ -1,0 +1,12 @@
+services:
+  agent:
+    build: .
+    stdin_open: true
+    tty: true
+    environment:
+      GEMINI_API_KEY:
+      GITHUB_PERSONAL_ACCESS_TOKEN:
+      STOCK_DATA_API_KEY:
+    volumes:
+
+      - ./workspace:/workspace
